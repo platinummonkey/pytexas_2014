@@ -1,12 +1,9 @@
 # Makefile for PyTexas 2014 Talk - Cody Lee <codylee@wellaware.us>
 
-all: titan
-
-titan:
-	fig up -d
+all: test deploy
 
 deploy:
-	gunicorn index:app
+	gunicorn -k eventlet -w 25 --reload -b 0.0.0.0:8080 index:app
 
 test:
 	nosetests -vv

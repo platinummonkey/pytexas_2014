@@ -2,7 +2,7 @@ mgmt = g.getManagementSystem()
 
 // Setup Property Keys and Edge Labels
 
-element_type = mgmt.makePropertyKey('element_type').dataType(String.class).make()
+// uncomment if running solo // element_type = mgmt.makePropertyKey('element_type').dataType(String.class).make()
 // movie keys
 movie_id = mgmt.makePropertyKey('movie_id').dataType(Integer.class).make()
 movie_title = mgmt.makePropertyKey('movie_title').dataType(String.class).make()
@@ -26,7 +26,7 @@ stars = mgmt.makePropertyKey('stars').dataType(Integer.class).make()
 
 //---- Build Indices
 //-- Composite Indices
-mgmt.buildIndex('byElementType', Vertex.class).addKey(element_type).buildCompositeIndex()
+// uncomment if running solo // mgmt.buildIndex('byElementType', Vertex.class).addKey(element_type).buildCompositeIndex()
 
 // movies
 mgmt.buildIndex('byMovieId', Vertex.class).addKey(movie_id).unique().buildCompositeIndex()

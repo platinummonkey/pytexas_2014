@@ -23,3 +23,9 @@ venv3/
 # logs
 *.log
 
+# ipynb
+.ipynb_checkpoints/
+
+# titan zip
+titan-0.5.0-hadoop2.zip
+titan-0.5.0-hadoop2/

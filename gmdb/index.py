@@ -238,4 +238,4 @@ def corated_movie_by_genre(movie_id, mc):
 
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=8080, debug=True)
+    app.run(server='eventlet', host='localhost', port=8080, debug=True)
