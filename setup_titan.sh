@@ -1,8 +1,8 @@
 #!/bin/bash
 
-wget http://s3.thinkaurelius.com/downloads/titan/titan-0.5.0-hadoop2.zip
-unzip titan-0.5.0-hadoop2.zip
-pushd titan-0.5.0-hadoop2
+wget http://s3.thinkaurelius.com/downloads/titan/titan-0.5.2-hadoop2.zip
+unzip titan-0.5.2-hadoop2.zip
+pushd titan-0.5.2-hadoop2
 cp ../rexster-cassandra-es-mogwai.xml conf/rexster-cassandra-es.xml
 ./bin/titan.sh start
 popd

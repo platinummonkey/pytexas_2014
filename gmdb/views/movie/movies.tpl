@@ -10,11 +10,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <h3>Model</h3>
             Simply use <code>Movie.all()</code>.
         </div>
-        <div class="col-sm-6">
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
             <h3>Code</h3>
             <pre>g.V('element_type', 'movie')</pre>
         </div>

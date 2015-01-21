@@ -17,11 +17,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <h3>Model</h3>
             Simply use <code>Movie.get(&lt;int:vertex_id&gt;) or Movie.find_by_value('movie_title', &lt;str:movie_title&gt;)</code>.
         </div>
-        <div class="col-sm-6">
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
             <h3>Code</h3>
             <pre>{{ code }}</pre>
         </div>
